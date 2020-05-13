@@ -1,0 +1,166 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A 11000 8500
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Module:Arduino_UNO_R2 A?
+U 1 1 5EBC407D
+P 3250 3675
+F 0 "A?" H 3250 4856 50  0000 C CNN
+F 1 "Arduino_UNO_R2" H 3250 4765 50  0000 C CNN
+F 2 "Module:Arduino_UNO_R2" H 3250 3675 50  0001 C CIN
+F 3 "https://www.arduino.cc/en/Main/arduinoBoardUno" H 3250 3675 50  0001 C CNN
+	1    3250 3675
+	1    0    0    -1  
+$EndComp
+Text GLabel 2250 2500 0    50   Input ~ 0
+DC_PSU_5+
+Text GLabel 2250 5000 0    50   Input ~ 0
+DC_PSU_GND
+Wire Wire Line
+	2250 5000 3150 5000
+Wire Wire Line
+	3150 5000 3150 4775
+Wire Wire Line
+	2250 2500 3150 2500
+Wire Wire Line
+	3150 2500 3150 2675
+Text GLabel 2250 1750 0    50   Output ~ 0
+120VAC_HOT
+Text GLabel 2250 1875 0    50   Output ~ 0
+120VAC_GND
+Text GLabel 2250 2000 0    50   Output ~ 0
+120VAC_NET
+$Comp
+L SRD-05VDC-SL-C:SRD-05VDC-SL-C K?
+U 1 1 5EBC6DD9
+P 5850 4300
+F 0 "K?" H 5850 4667 50  0000 C CNN
+F 1 "SRD-05VDC-SL-C" H 5850 4576 50  0000 C CNN
+F 2 "RELAY_SRD-05VDC-SL-C" H 5850 4300 50  0001 L BNN
+F 3 "SONGLE RELAY" H 5850 4300 50  0001 L BNN
+F 4 "IPC-7251" H 5850 4300 50  0001 L BNN "Field4"
+	1    5850 4300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:2N2219 Q?
+U 1 1 5EBCC234
+P 4925 3675
+F 0 "Q?" H 5115 3721 50  0000 L CNN
+F 1 "2N2219" H 5115 3630 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-39-3" H 5125 3600 50  0001 L CIN
+F 3 "http://www.onsemi.com/pub_link/Collateral/2N2219-D.PDF" H 4925 3675 50  0001 L CNN
+	1    4925 3675
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male J?
+U 1 1 5EBCD381
+P 2625 1875
+F 0 "J?" H 2597 1807 50  0000 R CNN
+F 1 "Conn_01x03_Male" H 2597 1898 50  0000 R CNN
+F 2 "" H 2625 1875 50  0001 C CNN
+F 3 "~" H 2625 1875 50  0001 C CNN
+	1    2625 1875
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2350 1750 2350 1775
+Wire Wire Line
+	2350 1775 2425 1775
+Wire Wire Line
+	2250 1750 2350 1750
+Wire Wire Line
+	2250 1875 2425 1875
+Wire Wire Line
+	2250 2000 2350 2000
+Wire Wire Line
+	2350 2000 2350 1975
+Wire Wire Line
+	2350 1975 2425 1975
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 5EBCE7E9
+P 2650 1475
+F 0 "J?" H 2622 1357 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 2622 1448 50  0000 R CNN
+F 2 "" H 2650 1475 50  0001 C CNN
+F 3 "~" H 2650 1475 50  0001 C CNN
+	1    2650 1475
+	-1   0    0    1   
+$EndComp
+Text GLabel 2250 1375 0    50   Output ~ 0
+DC_PSU_5+
+Text GLabel 2250 1475 0    50   Output ~ 0
+DC_PSU_GND
+Wire Wire Line
+	2250 1375 2450 1375
+Wire Wire Line
+	2250 1475 2450 1475
+$Comp
+L Device:R R?
+U 1 1 5EBD003C
+P 3525 2125
+F 0 "R?" H 3595 2171 50  0000 L CNN
+F 1 "R" H 3595 2080 50  0000 L CNN
+F 2 "" V 3455 2125 50  0001 C CNN
+F 3 "~" H 3525 2125 50  0001 C CNN
+	1    3525 2125
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5EBD02FE
+P 7675 4025
+F 0 "R?" H 7745 4071 50  0000 L CNN
+F 1 "250" H 7745 3980 50  0000 L CNN
+F 2 "" V 7605 4025 50  0001 C CNN
+F 3 "~" H 7675 4025 50  0001 C CNN
+	1    7675 4025
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5EBD0A16
+P 7350 4025
+F 0 "R?" H 7420 4071 50  0000 L CNN
+F 1 "250" H 7420 3980 50  0000 L CNN
+F 2 "" V 7280 4025 50  0001 C CNN
+F 3 "~" H 7350 4025 50  0001 C CNN
+	1    7350 4025
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5025 3875 5025 4200
+Wire Wire Line
+	5025 4200 5550 4200
+Text GLabel 7150 4300 0    50   Output ~ 0
+120VAC_NET
+Wire Wire Line
+	7150 4300 7350 4300
+Wire Wire Line
+	7350 4300 7350 4175
+Wire Wire Line
+	7675 4175 7675 4300
+Wire Wire Line
+	7675 4300 7350 4300
+Connection ~ 7350 4300
+Wire Wire Line
+	7350 3875 7350 3750
+Wire Wire Line
+	7350 3750 7675 3750
+Wire Wire Line
+	7675 3750 7675 3875
+$EndSCHEMATC
